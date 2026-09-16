@@ -291,13 +291,17 @@ def safe_load_model(model_path="plant_disease_model.keras"):
                         pass
         raise e
 
+BASE_DIR = Path(__file__).resolve().parent
+
 @st.cache_resource
 def load_app_resources():
-    model = safe_load_model("plant_disease_model.keras")
+    model_path = str(BASE_DIR / "plant_disease_model.keras")
+    model = safe_load_model(model_path)
     
     idx_to_class = {}
-    if os.path.exists("class_indices.json"):
-        with open("class_indices.json", "r") as f:
+    class_indices_path = str(BASE_DIR / "class_indices.json")
+    if os.path.exists(class_indices_path):
+        with open(class_indices_path, "r", encoding="utf-8") as f:
             raw_indices = json.load(f)
         if all(isinstance(v, int) for v in raw_indices.values()):
             idx_to_class = {v: k for k, v in raw_indices.items()}
