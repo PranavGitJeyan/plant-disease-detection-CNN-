@@ -94,24 +94,25 @@ h1, h2, h3, h4, h5, h6, .brand-font {
 }
 
 .kpi-card {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
+    background: #1e293b;
+    border: 1px solid #334155;
     border-radius: 14px;
     padding: 1.1rem 1.3rem;
-    box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.25);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .kpi-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 8px 18px -3px rgba(0, 0, 0, 0.4);
+    border-color: #475569;
 }
 
 .kpi-label {
     font-size: 0.78rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: #64748b;
+    color: #94a3b8;
     letter-spacing: 0.04em;
     margin-bottom: 0.25rem;
 }
@@ -120,40 +121,91 @@ h1, h2, h3, h4, h5, h6, .brand-font {
     font-family: 'Outfit', sans-serif;
     font-size: 1.85rem;
     font-weight: 800;
-    color: #0f172a;
+    color: #f8fafc;
     line-height: 1.1;
 }
 
-/* Card Styling */
+/* Custom Card Styling - Dark Slate Glassmorphic (High Contrast) */
 .custom-card {
-    background: #ffffff;
+    background: #1e293b;
     border-radius: 16px;
     padding: 1.4rem;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #334155;
+    box-shadow: 0 4px 14px -2px rgba(0, 0, 0, 0.25);
     margin-bottom: 1.2rem;
+    color: #f1f5f9 !important;
+}
+
+.custom-card h1, .custom-card h2, .custom-card h3, .custom-card h4, .custom-card h5, .custom-card h6 {
+    color: #f8fafc !important;
+    font-weight: 700;
+}
+
+.custom-card p, .custom-card span, .custom-card li, .custom-card div {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.custom-card strong {
+    color: #ffffff !important;
+}
+
+.custom-card ul {
+    color: #cbd5e1 !important;
+    margin: 0.5rem 0;
+    padding-left: 1.3rem;
+}
+
+.custom-card hr {
+    border: none;
+    border-top: 1px solid #334155 !important;
+    margin: 0.9rem 0;
+}
+
+.custom-card code {
+    background: #0f172a !important;
+    color: #38bdf8 !important;
+    padding: 0.2rem 0.45rem;
+    border-radius: 6px;
+    border: 1px solid #334155;
 }
 
 .card-healthy {
-    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-    border: 1px solid #86efac;
-    color: #14532d;
+    background: linear-gradient(135deg, rgba(6, 78, 59, 0.75) 0%, rgba(4, 120, 87, 0.5) 100%) !important;
+    border: 1px solid #10b981 !important;
+    color: #f0fdf4 !important;
+}
+
+.card-healthy h2, .card-healthy p, .card-healthy strong, .card-healthy .metric-big {
+    color: #ffffff !important;
+}
+
+.card-healthy .info-label {
+    color: #a7f3d0 !important;
 }
 
 .card-disease {
-    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-    border: 1px solid #fca5a5;
-    color: #7f1d1d;
+    background: linear-gradient(135deg, rgba(127, 29, 29, 0.8) 0%, rgba(185, 28, 28, 0.55) 100%) !important;
+    border: 1px solid #ef4444 !important;
+    color: #fef2f2 !important;
+}
+
+.card-disease h2, .card-disease p, .card-disease strong, .card-disease .metric-big {
+    color: #ffffff !important;
+}
+
+.card-disease .info-label {
+    color: #fecaca !important;
 }
 
 /* Badges & Pills */
 .badge-pill {
     display: inline-block;
-    padding: 0.3rem 0.85rem;
+    padding: 0.35rem 0.9rem;
     border-radius: 9999px;
     font-size: 0.78rem;
     font-weight: 700;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
 }
 
@@ -182,57 +234,123 @@ h1, h2, h3, h4, h5, h6, .brand-font {
     font-weight: 800;
     line-height: 1.1;
     font-family: 'Outfit', sans-serif;
+    color: #ffffff !important;
 }
 
+/* Botanical Treatment Box Styles (High Contrast on Dark Surfaces) */
 .treatment-box {
-    padding: 1.15rem;
-    border-radius: 12px;
-    background: #f8fafc;
-    border-left: 4px solid #059669;
-    margin-bottom: 0.85rem;
+    padding: 1.25rem;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(6, 78, 59, 0.45) 0%, rgba(6, 78, 59, 0.2) 100%) !important;
+    border: 1px solid rgba(16, 185, 129, 0.35) !important;
+    border-left: 5px solid #10b981 !important;
+    margin-bottom: 0.95rem;
+    color: #f1f5f9 !important;
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.2);
+}
+
+.treatment-box h4 {
+    color: #34d399 !important;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.treatment-box p {
+    color: #f1f5f9 !important;
+    line-height: 1.65;
+    margin: 0;
+    font-size: 0.95rem;
 }
 
 .treatment-box-chem {
-    padding: 1.15rem;
-    border-radius: 12px;
-    background: #f8fafc;
-    border-left: 4px solid #2563eb;
-    margin-bottom: 0.85rem;
+    padding: 1.25rem;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.45) 0%, rgba(30, 58, 138, 0.2) 100%) !important;
+    border: 1px solid rgba(59, 130, 246, 0.35) !important;
+    border-left: 5px solid #3b82f6 !important;
+    margin-bottom: 0.95rem;
+    color: #f1f5f9 !important;
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.2);
+}
+
+.treatment-box-chem h4 {
+    color: #60a5fa !important;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.treatment-box-chem p {
+    color: #f1f5f9 !important;
+    line-height: 1.65;
+    margin: 0 0 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.treatment-box-chem small {
+    color: #94a3b8 !important;
+    display: block;
+    line-height: 1.45;
 }
 
 .treatment-box-cult {
-    padding: 1.15rem;
-    border-radius: 12px;
-    background: #f8fafc;
-    border-left: 4px solid #f59e0b;
-    margin-bottom: 0.85rem;
+    padding: 1.25rem;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(180, 83, 9, 0.45) 0%, rgba(180, 83, 9, 0.2) 100%) !important;
+    border: 1px solid rgba(245, 158, 11, 0.35) !important;
+    border-left: 5px solid #f59e0b !important;
+    margin-bottom: 0.95rem;
+    color: #f1f5f9 !important;
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.2);
+}
+
+.treatment-box-cult h4 {
+    color: #fbbf24 !important;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.treatment-box-cult p {
+    color: #f1f5f9 !important;
+    line-height: 1.65;
+    margin: 0;
+    font-size: 0.95rem;
 }
 
 .info-label {
     font-size: 0.8rem;
     text-transform: uppercase;
-    color: #64748b;
+    color: #94a3b8;
     font-weight: 600;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.05em;
 }
 
 .qa-card {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
+    background: #1e293b;
+    border: 1px solid #334155;
     border-radius: 12px;
-    padding: 1rem 1.2rem;
-    margin-bottom: 0.8rem;
+    padding: 1.1rem 1.3rem;
+    margin-bottom: 0.85rem;
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.2);
 }
 
 .qa-question {
     font-weight: 700;
-    color: #0f172a;
-    margin-bottom: 0.35rem;
+    color: #38bdf8;
+    margin-bottom: 0.4rem;
+    font-size: 1.05rem;
 }
 
 .qa-answer {
-    color: #334155;
-    line-height: 1.5;
+    color: #e2e8f0;
+    line-height: 1.65;
+    font-size: 0.95rem;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -766,7 +884,7 @@ with tab_scan:
                         </div>
                         <div>
                             <div class="info-label">Inference Latency</div>
-                            <div class="metric-big" style="font-size: 1.5rem; color: #475569;">⚡ {res['latency_ms']:.1f} ms</div>
+                            <div class="metric-big" style="font-size: 1.5rem; color: #38bdf8;">⚡ {res['latency_ms']:.1f} ms</div>
                         </div>
                     </div>
                 </div>
@@ -996,17 +1114,17 @@ with tab_treat:
         st.markdown(f"""
         <div class="custom-card">
             <span class="badge-pill badge-info">Pathogen Dossier</span>
-            <h3 style="margin-top: 0.6rem;">{selected_disease_key.replace('_', ' ').title()}</h3>
-            <p><strong>Causal Agent:</strong> {treatment_data['type']}</p>
-            <p><strong>Priority Level:</strong> <span class="badge-pill {'badge-healthy' if treatment_data['urgency']=='None' else 'badge-danger' if treatment_data['urgency']=='High' else 'badge-warning'}">{treatment_data['urgency']}</span></p>
-            <hr style="margin: 0.8rem 0;">
-            <p><strong>Diagnostic Symptoms:</strong><br>{treatment_data['symptoms']}</p>
+            <h3 style="margin-top: 0.6rem; color: #f8fafc;">{selected_disease_key.replace('_', ' ').title()}</h3>
+            <p><strong style="color: #ffffff;">Causal Agent:</strong> <span style="color: #cbd5e1;">{treatment_data['type']}</span></p>
+            <p><strong style="color: #ffffff;">Priority Level:</strong> <span class="badge-pill {'badge-healthy' if treatment_data['urgency']=='None' else 'badge-danger' if treatment_data['urgency']=='High' else 'badge-warning'}">{treatment_data['urgency']}</span></p>
+            <hr style="margin: 0.8rem 0; border: none; border-top: 1px solid #334155;">
+            <p><strong style="color: #ffffff;">Diagnostic Symptoms:</strong><br><span style="color: #cbd5e1;">{treatment_data['symptoms']}</span></p>
         </div>
         """, unsafe_allow_html=True)
         
         st.markdown(f"""
         <div class="treatment-box">
-            <h4 style="color: #047857; margin-top: 0;">🌱 Organic & Biological Controls</h4>
+            <h4>🌱 Organic & Biological Controls</h4>
             <p>{treatment_data['organic']}</p>
         </div>
         """, unsafe_allow_html=True)
@@ -1014,15 +1132,15 @@ with tab_treat:
     with col_t2:
         st.markdown(f"""
         <div class="treatment-box-chem">
-            <h4 style="color: #1d4ed8; margin-top: 0;">🧪 Chemical Fungicide / Bactericide Regimen</h4>
+            <h4>🧪 Chemical Fungicide / Bactericide Regimen</h4>
             <p>{treatment_data['chemical']}</p>
-            <small style="color: #64748b;">*Always adhere to local label rates, rotational FRAC codes to prevent resistance, and respect pre-harvest intervals (PHI).*</small>
+            <small>*Always adhere to local label rates, rotational FRAC codes to prevent resistance, and respect pre-harvest intervals (PHI).*</small>
         </div>
         """, unsafe_allow_html=True)
 
         st.markdown(f"""
         <div class="treatment-box-cult">
-            <h4 style="color: #b45309; margin-top: 0;">🚜 Agronomic Cultural Sanitation</h4>
+            <h4>🚜 Agronomic Cultural Sanitation</h4>
             <p>{treatment_data['prevention']}</p>
         </div>
         """, unsafe_allow_html=True)
@@ -1077,8 +1195,8 @@ with tab_weather:
         st.markdown(f"""
         <div class="custom-card" style="border-left: 5px solid {spore_color};">
             <div class="info-label">Pathogen Microclimate Index</div>
-            <h3 style="color: {spore_color}; margin: 0.3rem 0;">{spore_label} ({spore_risk_score}/100)</h3>
-            <p>Elevated humidity ({ambient_rh}%) and temperature ({ambient_temp}°C) create favorable infection windows for oomycetes (Late Blight) and powdery mildews.</p>
+            <h3 style="color: {spore_color}; margin: 0.3rem 0; font-size: 1.45rem;">{spore_label} ({spore_risk_score}/100)</h3>
+            <p style="color: #cbd5e1; line-height: 1.65; margin: 0;">Elevated humidity ({ambient_rh}%) and temperature ({ambient_temp}°C) create favorable infection windows for oomycetes (Late Blight) and powdery mildews.</p>
         </div>
         """, unsafe_allow_html=True)
 
@@ -1103,11 +1221,11 @@ with tab_weather:
 
         st.markdown("""
         <div class="custom-card">
-            <h4>💡 Precision Application Best Practices</h4>
-            <ul>
-                <li><strong>Nozzle Choice:</strong> Use air-induction nozzles at 2.5–3.0 bar to generate coarse droplets less prone to drift.</li>
-                <li><strong>Optimal Timing:</strong> Spray during early morning (6:00 AM – 9:00 AM) when foliage is dry and winds are calm.</li>
-                <li><strong>Adjuvant:</strong> Add an organosilicone surfactant to improve foliar spread and rainfastness.</li>
+            <h4 style="color: #38bdf8; margin-top: 0; margin-bottom: 0.6rem; font-size: 1.15rem;">💡 Precision Application Best Practices</h4>
+            <ul style="color: #cbd5e1; line-height: 1.65; margin: 0; padding-left: 1.3rem;">
+                <li><strong style="color: #ffffff;">Nozzle Choice:</strong> Use air-induction nozzles at 2.5–3.0 bar to generate coarse droplets less prone to drift.</li>
+                <li><strong style="color: #ffffff;">Optimal Timing:</strong> Spray during early morning (6:00 AM – 9:00 AM) when foliage is dry and winds are calm.</li>
+                <li><strong style="color: #ffffff;">Adjuvant:</strong> Add an organosilicone surfactant to improve foliar spread and rainfastness.</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)

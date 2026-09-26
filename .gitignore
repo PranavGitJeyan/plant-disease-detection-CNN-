@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+plant_disease_model_colab_raw.keras
+.DS_Store
