@@ -1,0 +1,49 @@
+================================================================================
+PhytoGuard AI - Classification Report (Actual Test Run)
+Overall Accuracy: 97.89%
+================================================================================
+
+                                                    precision    recall  f1-score   support
+
+                                Apple___Apple_scab     1.0000    1.0000    1.0000         5
+                                 Apple___Black_rot     1.0000    1.0000    1.0000         5
+                          Apple___Cedar_apple_rust     1.0000    1.0000    1.0000         5
+                                   Apple___healthy     1.0000    1.0000    1.0000         5
+                               Blueberry___healthy     1.0000    1.0000    1.0000         5
+          Cherry_(including_sour)___Powdery_mildew     1.0000    1.0000    1.0000         5
+                 Cherry_(including_sour)___healthy     1.0000    1.0000    1.0000         5
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot     1.0000    0.8000    0.8889         5
+                       Corn_(maize)___Common_rust_     1.0000    1.0000    1.0000         5
+               Corn_(maize)___Northern_Leaf_Blight     0.8333    1.0000    0.9091         5
+                            Corn_(maize)___healthy     1.0000    1.0000    1.0000         5
+                                 Grape___Black_rot     1.0000    1.0000    1.0000         5
+                      Grape___Esca_(Black_Measles)     1.0000    1.0000    1.0000         5
+        Grape___Leaf_blight_(Isariopsis_Leaf_Spot)     1.0000    1.0000    1.0000         5
+                                   Grape___healthy     1.0000    1.0000    1.0000         5
+          Orange___Haunglongbing_(Citrus_greening)     1.0000    1.0000    1.0000         5
+                            Peach___Bacterial_spot     1.0000    1.0000    1.0000         5
+                                   Peach___healthy     1.0000    1.0000    1.0000         5
+                     Pepper,_bell___Bacterial_spot     1.0000    1.0000    1.0000         5
+                            Pepper,_bell___healthy     1.0000    1.0000    1.0000         5
+                             Potato___Early_blight     1.0000    1.0000    1.0000         5
+                              Potato___Late_blight     1.0000    1.0000    1.0000         5
+                                  Potato___healthy     1.0000    1.0000    1.0000         5
+                               Raspberry___healthy     1.0000    1.0000    1.0000         5
+                                 Soybean___healthy     1.0000    1.0000    1.0000         5
+                           Squash___Powdery_mildew     1.0000    1.0000    1.0000         5
+                          Strawberry___Leaf_scorch     1.0000    1.0000    1.0000         5
+                              Strawberry___healthy     1.0000    1.0000    1.0000         5
+                           Tomato___Bacterial_spot     1.0000    1.0000    1.0000         5
+                             Tomato___Early_blight     1.0000    0.8000    0.8889         5
+                              Tomato___Late_blight     1.0000    0.8000    0.8889         5
+                                Tomato___Leaf_Mold     0.8333    1.0000    0.9091         5
+                       Tomato___Septoria_leaf_spot     0.8333    1.0000    0.9091         5
+     Tomato___Spider_mites Two-spotted_spider_mite     0.8000    0.8000    0.8000         5
+                              Tomato___Target_Spot     1.0000    1.0000    1.0000         5
+            Tomato___Tomato_Yellow_Leaf_Curl_Virus     1.0000    1.0000    1.0000         5
+                      Tomato___Tomato_mosaic_virus     1.0000    1.0000    1.0000         5
+                                  Tomato___healthy     1.0000    1.0000    1.0000         5
+
+                                          accuracy                         0.9789       190
+                                         macro avg     0.9816    0.9789    0.9788       190
+                                      weighted avg     0.9816    0.9789    0.9788       190

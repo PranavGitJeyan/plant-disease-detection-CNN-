@@ -1,0 +1,42 @@
+{
+  "model_path": "plant_disease_model.keras",
+  "total_test_images": 190,
+  "correct_predictions": 186,
+  "test_accuracy_percentage": 97.89,
+  "misclassifications_count": 4,
+  "species_accuracy_percentage": 100.0,
+  "misclassified_details": [
+    {
+      "image_index": 35,
+      "file_path": "./test_dataset/color\\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot\\00120a18-ff90-46e4-92fb-2b7a10345bd3___RS_GLSp 9357.JPG",
+      "true_class": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "predicted_class": "Corn_(maize)___Northern_Leaf_Blight",
+      "true_class_confidence": 0.35,
+      "predicted_class_confidence": 99.61
+    },
+    {
+      "image_index": 148,
+      "file_path": "./test_dataset/color\\Tomato___Early_blight\\00c5c908-fc25-4710-a109-db143da23112___RS_Erly.B 7778.JPG",
+      "true_class": "Tomato___Early_blight",
+      "predicted_class": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "true_class_confidence": 0.07,
+      "predicted_class_confidence": 99.13
+    },
+    {
+      "image_index": 153,
+      "file_path": "./test_dataset/color\\Tomato___Late_blight\\005e3b43-9050-47da-9498-f9ecdcc703b3___RS_Late.B 5104.JPG",
+      "true_class": "Tomato___Late_blight",
+      "predicted_class": "Tomato___Septoria_leaf_spot",
+      "true_class_confidence": 0.01,
+      "predicted_class_confidence": 99.92
+    },
+    {
+      "image_index": 165,
+      "file_path": "./test_dataset/color\\Tomato___Spider_mites Two-spotted_spider_mite\\002835d1-c18e-4471-aa6e-8d8c29585e9b___Com.G_SpM_FL 8584.JPG",
+      "true_class": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "predicted_class": "Tomato___Leaf_Mold",
+      "true_class_confidence": 0.5,
+      "predicted_class_confidence": 66.2
+    }
+  ]
+}
